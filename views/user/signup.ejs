@@ -1,11 +1,10 @@
-
-<%- include("../partials/headers.ejs", {title : "page d'incription" , style : "auth"}) %>
+<%- include("../partials/headers.ejs", {title : "page d'incription" , style : "auth" }) %>
     <h1>Page d'inscription</h1>
     <form class="form" action="" method="POST">
-        <%- include("../components/input", {type: "text", name:"username" }) %>
-        <%- include("../components/input", {type: "email", name:"email" }) %>
-        <%- include("../components/input", {type: "password", name:"password" }) %>
-        <button type="submit">Inscription</button>
+        <%- include("../components/input", {type: "text" , name:"username" }) %>
+            <%- include("../components/input", {type: "email" , name:"email" }) %>
+                <%- include("../components/input", {type: "password" , name:"password" }) %>
+                    <button type="submit">Inscription</button>
     </form>
 
 

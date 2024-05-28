@@ -1,0 +1,10 @@
+<%- include("./partials/headers.ejs", {title : "page d'acceuil'" , style : "auth" }) %>
+    <% if (locals.connected){ %>
+        <h1>Bonjour <%= locals.user.username %>
+        </h1>
+        <% } else{ %>
+            <h1>Bonjour inconnu</h1>
+            <% } %>
+
+
+                <%- include("./partials/footers.ejs") %>
